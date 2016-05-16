@@ -19,7 +19,7 @@ namespace DeadLockReport
         public void SendReport(DeadLock deadLock)
         {
             const string deadlockGraphFolder = "graph";
-            var dir = new DirectoryInfo(deadlockGraphFolder);
+            var dir = new DirectoryInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, deadlockGraphFolder));
             if (!dir.Exists)
             {
                 dir.Create();
