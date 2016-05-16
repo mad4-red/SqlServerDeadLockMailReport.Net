@@ -31,8 +31,6 @@ namespace DeadLockReport
             }
 
             settingManager.SetSinceDateTime(deadLocks.Max(x => x.TimeStamp));
-
-            Console.ReadLine();
         }
     }
 }
