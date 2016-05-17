@@ -234,3 +234,8 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# dist
+!dist/*/*.exe
+!dist/*/*.exe.config
+dist/*/*.vshost.exe*
